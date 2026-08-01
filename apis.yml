@@ -1,7 +1,26 @@
 aid: quickshipper
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/quickshipper.png
 name: Quickshipper
-description: Quickshipper is a company surfaced as a portfolio company of 500-global and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  QuickShipper is a last-mile delivery and fleet management SaaS platform that
+  helps businesses manage order fulfillment and deliveries. It provides route
+  optimization, order batching, automated or manual dispatching, a courier
+  mobile app, real-time tracking, branded customer notifications, and business
+  analytics. Companies can operate their own fleet or connect with third-party
+  courier providers, and can sync orders automatically through API integration
+  and WooCommerce/WordPress plugins. Surfaced as a portfolio company of 500
+  Global and added to the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/quickshipper/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +30,35 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Logistics
+- Last-Mile Delivery
+- Fleet Management
+- Shipping
+- Courier
+- Route Optimization
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/quickshipper-domain-security.yml
+- type: Website
+  url: https://quickshipper.app
 - type: Website
   url: https://qshpr.com
+- type: SignUp
+  url: https://dashboard.quickshipper.app/en/auth
+- type: Login
+  url: https://dashboard.quickshipper.app/en/auth
